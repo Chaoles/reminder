@@ -5,7 +5,8 @@ Dependence:
     pymsgbox: use pip install pymsgbox to install
     winsound: depended only under windows, not tested
 Use:
-    python reminder.py [--title Reminder] [--text Reminder] [--interval 60] [--sound reminder.wav]
+    python reminder.py [--title Reminder] [--text Reminder] [--interval 60] 
+                       [--sound reminder.wav]
 '''
 
 import time
@@ -45,6 +46,7 @@ def playsd(sound='reminder.wav'):
             
     
 if __name__ == '__main__':
+
     interval = 60 # minutes
     title = 'Reminder'
     text = ''
@@ -85,5 +87,4 @@ if __name__ == '__main__':
         time.sleep(interval*60.)
         playsd(sound=sound)
         time.sleep(0.2)
-        ans = showmsg(text=text, title=title)
-                            
+        ans = showmsg(text=text, title=title)                           
