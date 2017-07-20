@@ -7,6 +7,6 @@ Depend on pymsgbox, and winsound (under windows only)
 
 Call with: 
 
-  python reminder.py [--title Reminder] [--text Reminder] [--interval 60] [--sound reminder.wav]
+    python reminder.py [--title Reminder] [--text Reminder] [--interval 60] [--sound reminder.wav]
   
   
