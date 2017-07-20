@@ -8,7 +8,11 @@ Use:
     python reminder.py [--title Reminder] [--text Reminder] [--interval 60] [--sound reminder.wav]
 '''
 
-import time, pymsgbox, sys, os
+import time
+import os
+import sys
+import os
+import pymsgbox
 
 
 def showmsg(text='Reminder',title='Reminder'):
