@@ -1,5 +1,6 @@
 # reminder
-==================================
+====
+
 A simple python reminder
 Can be used with python2 or python3
 Depend on pymsgbox, and winsound (under windows only)
