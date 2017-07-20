@@ -69,6 +69,10 @@ if __name__ == '__main__':
                 if name.startswith('so') and i+1 <= length:
                     if not args[i+1].startswith('--'):
                         sound = args[i+1]
+    if sys.platform[:5] == 'linux':
+        sound = os.path.split(os.path.realpath(__file__))[0]+'/'+sound
+    else:
+        sound = os.path.split(os.path.realpath(__file__))[0]+'\\'+sound
     if text == '':
         text = 'You have been working for '+str(interval)+' minutes \n'+ \
                 'It\'s time to walk and drink some water!'
@@ -76,6 +80,6 @@ if __name__ == '__main__':
     while ans == 'y':
         time.sleep(interval*60.)
         playsd(sound=sound)
-        time.sleep(0.5)
+        time.sleep(0.2)
         ans = showmsg(text=text, title=title)
                             
